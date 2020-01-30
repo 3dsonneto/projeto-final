@@ -1,5 +1,11 @@
+
 *{
   scroll-behavior: smooth;
+}
+
+nav{
+  padding-top: 20px;
+  text-align: center;
 }
 
 a{
@@ -62,6 +68,7 @@ header .overlay {
 .sobre{
   padding: 30px;
   text-align: justify;
+
 
 }
 section{

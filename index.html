@@ -9,24 +9,26 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
 </head>
 
 <body>
 
-  <nav class="fixed-top">
+  <nav class="nav-bg">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <a href="#home">HOME</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <a href="#sobre">SOBRE</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <a href="#prox-show">PROXIMO SHOW</a>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <a href="#prox-show">PROXIMOS SHOWS</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <a href="#albuns">ULTIMOS ALBUNS</a>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <a href="#albuns">ALBUNS</a>
         </div>
       </div>
     </div>
@@ -65,64 +67,227 @@
     </div>
   </section>
 
-  <section id="prox-show">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <hr>
-        <h3>LOCALIZAÇÃO DO PRÓXIMO SHOW</h3>
-        <iframe class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.1193850765203!2d-58.514788684667!3d-34.474495558179456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03591565023%3A0x934243997166f0a9!2sHipodromo%20de%20San%20Isidro!5e0!3m2!1spt-BR!2sbr!4v1580418309532!5m2!1spt-BR!2sbr"
-          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <section id="prox-show" class="prox-show">
+    <div class="row shows">
+      <hr>
+      <h3>PRÓXIMOS SHOWS</h3>
+
+      <div class="row datas">
+        <div class="col-md-3">
+          MAR 27
+        </div>
+        <div class="col-md-3">
+          ARGENTINA
+        </div>
+        <div class="col-md-3">
+          <a target="_blank" href="https://www.lollapaloozaar.com/"><img src="img/lolla-arg.png" alt=""
+              class="lolla"></a>
+        </div>
+        <div class="col-md-3"><a data-toggle="modal" href="#modal-arg"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
       </div>
+
+
+      <div class="row datas">
+        <div class="col-md-3">
+          MAR 28
+        </div>
+        <div class="col-md-3">
+          CHILE
+        </div>
+        <div class="col-md-3">
+          <a target="_blank" href="https://www.lollapaloozacl.com/"><img src="img/lolla-chile.png" alt=""
+              class="lolla"></a>
+        </div>
+        <div class="col-md-3"><a data-toggle="modal" href="#modal-chile"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+
+      <div class="row datas">
+        <div class="col-md-3">
+          APR 4
+        </div>
+        <div class="col-md-3">
+          BRASIL
+        </div>
+        <div class="col-md-3">
+          <a target="_blank" href="https://www.lollapaloozabr.com/"><img src="img/lolla-logo.png" alt=""
+              class="lolla"></a>
+        </div>
+        <div class="col-md-3"><a data-toggle="modal" href="#modal-br"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+
+      <div class="row datas">
+        <div class="col-md-3">
+          ABR 11
+        </div>
+        <div class="col-md-3">
+          EUA
+        </div>
+        <div class="col-md-3">
+          <a target="_blank" href="https://www.coachella.com/"><img src="img/images.jpg" alt="" class="lolla"></a>
+        </div>
+        <div class="col-md-3"><a data-toggle="modal" href="#modal-coach"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+
+      <div class="row datas">
+        <div class="col-md-3">
+          ABR 18
+        </div>
+        <div class="col-md-3">
+          EUA
+        </div>
+        <div class="col-md-3">
+          <a target="_blank" href="https://www.coachella.com/"><img src="img/images.jpg" alt="" class="lolla"></a>
+        </div>
+        <div class="col"><a data-toggle="modal" href="#modal-coach"><i class="fas fa-map-marker-alt"></i></a></div>
+      </div>
+      <hr>
     </div>
   </section>
 
-  <section id="albuns" class="albuns h-100 w-100">
+  <section id="albuns" class="albuns">
     <h3>ALBUNS</h3>
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/rodeo.png">
-            <img class="img-fluid" src="img/rodeo.png"">
-            <div class=" portfolio-box-caption">
-            <div class="project-category text-white-50">
-              RODEO
-            </div>
-            <div class="project-name">
-              2015
-            </div>
+
+    <div class="container cont-album">
+
+      <div class="row no-gutters linha-album">
+        <div class="col-lg-6 col-sm-6">
+          <img class="img-fluid" src="img/rodeo.png"">
+              <div class=" portfolio-box-caption">
+          <div class="project-category text-white-50">
+            RODEO
+          </div>
+          <div class="project-name">
+            2015
+          </div>
         </div>
-        </a>
       </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="img/travis-jump.png">
-          <img class="img-fluid" src="img/birds.png" alt="">
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">
-              Birds in the Trap Sing McKnight
-            </div>
-            <div class="project-name">
-              2016
-            </div>
+      <div class="col-lg-6 col-sm-6">
+        <img class="img-fluid" src="img/birds.png" alt="">
+        <div class="portfolio-box-caption">
+          <div class="project-category text-white-50">
+            Birds in the Trap Sing McKnight
           </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="img/astroworld.png">
-          <img class="img-fluid" src="img/astroworld.png" alt="">
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">
-              Astroworld
-            </div>
-            <div class="project-name">
-              2018
-            </div>
+          <div class="project-name">
+            2016
           </div>
-        </a>
+        </div>
       </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-lg-6 col-sm-6">
+        <img class="img-fluid" src="img/astroworld.png" alt="">
+        <div class="portfolio-box-caption">
+          <div class="project-category text-white-50">
+            Astroworld
+          </div>
+          <div>
+            2018
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-6">
+        <img class="img-fluid" src="img/jackboys-resize.jpg" alt="">
+        <div class="portfolio-box-caption">
+          <div class="">
+            Jackboys
+          </div>
+          <div>
+            2019
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
   </section>
 
 
+  <!-- MODAL -->
+
+  <div class="modal fade" id="modal-arg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hipodromo de San Isidro</h5>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.119385076473!2d-58.51478868410635!3d-34.474495558180664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03591565023%3A0x934243997166f0a9!2sHipodromo%20de%20San%20Isidro!5e0!3m2!1spt-BR!2sbr!4v1580672215791!5m2!1spt-BR!2sbr"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-chile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">O'Higgins Park</h5>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6656.9595287423135!2d-70.66132064154117!3d-33.462857909204516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c51a3181879b%3A0x5639a5fc5f40784!2sO&#39;Higgins%20Park!5e0!3m2!1spt-BR!2sbr!4v1580672546074!5m2!1spt-BR!2sbr"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-br" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Autódromo de Interlagos</h5>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5166.538720540209!2d-46.70111393091567!3d-23.70117274194672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fc83e9584af%3A0x2ffcdc07da2ca5c0!2sAut%C3%B3dromo%20Jos%C3%A9%20Carlos%20Pace!5e0!3m2!1spt-BR!2sbr!4v1580672766006!5m2!1spt-BR!2sbr"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-coach" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Coachella Valley Music & Arts Festival</h5>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.0710988852252!2d-116.2371432370432!3d33.6793820009925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80daf9a81481c951%3A0xf2efefc6f05392dc!2sCoachella%20Valley%20Music%20%26%20Arts%20Festival!5e0!3m2!1spt-BR!2sbr!4v1580672842657!5m2!1spt-BR!2sbr"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

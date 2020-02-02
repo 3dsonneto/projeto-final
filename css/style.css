@@ -1,21 +1,22 @@
 *{
   scroll-behavior: smooth;
   color: white !important;
-
-}
-
-html, body{
   width: 100%;
-  height: 100%;
+
 }
 
 nav{
-  padding-top: 20px;
   text-align: center;
+  padding: 15px 0;
+}
+
+.nav-bg{
+  background-color: rgb(46, 46, 46);
 }
 
 h3{
   text-align: center;
+  padding: 30px 0;
 }
 
 hr{
@@ -103,10 +104,42 @@ padding: 20px;
   padding: 20px;
 }
 
+.prox-show{
+  text-align: center;
+}
+
+.shows{
+  padding: 20px 0;
+}
+
+.datas{
+  text-align: center;
+  padding: 10px;
+}
+
 .mapa{
   width: 100%;
 }
 
 .albuns{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lolla{
+  width: 30%;
+}
+
+.cont-album{
+  padding: 20px;
+}
+
+.linha-album{
+  padding-bottom: 20px;
+}
+
+.modal-title{
+  color: black !important;
   text-align: center;
 }

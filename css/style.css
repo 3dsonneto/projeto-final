@@ -139,8 +139,17 @@ padding: 20px;
   padding-bottom: 20px;
 }
 
-.modal-title{
+.titulo-modal{
   color: black !important;
   text-align: center;
+}
+
+.titulo-modal-sample{
+  color: black !important;
+  text-align: center;
+}
+
+.sample-mod{
+  color: black !important;
 }
 
